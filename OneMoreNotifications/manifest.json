@@ -1,34 +1,33 @@
 {
-    "name":  "OneMoreNotification",
+    "name": "OneMoreNotification",
     "version": "1.0",
     "description": "Use this to see all your social networks in your browser",
     "manifest_version": 2,
     "author": "Samuel Barón Abad",
-
-    "action": {
+    "icons": {
+        "16": "assets/img/png/icon16.png",
+        "48": "assets/img/png/icon48.png",
+        "128": "assets/img/png/icon128.png"
+    },
+    "browser_action": {
         "default_icon": {
-            "16": "assets/img/png/icon16.png",
-            "19": "assets/img/png/icon19.png",
-            "48": "assets/img/png/icon48.png",
-            "128": "assets/img/png/icon128.png"
+            "19": "assets/img/png/icon19.png"
         },
         "default_title": "OneMoreNotification",
-        "default:popup": "popup.html"
+        "default_popup": "popup.html"
     },
     "background": {
-        "page": "pages/background.html"
+        "scripts": ["./background.js"]
     },
+    "options_page": "./options.html",
     "permissions": [
         "notifications",
         "storage",
         "tabs",
-        "http://*/*", "https://*/*",
+        "http://*/*",
+        "https://*/*",
         "cookies",
         "https://www.youtube.com/*",
-        "https://www.facebook.com"
-    ],
-    "web_accesible_resources": [
-        "assets/img/png/icon48.png"
+        "https://www.facebook.com/*"
     ]
-
 }

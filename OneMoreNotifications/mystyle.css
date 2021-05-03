@@ -1,0 +1,17 @@
+#first {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#second {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
